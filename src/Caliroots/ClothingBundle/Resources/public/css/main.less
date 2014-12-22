@@ -1,0 +1,87 @@
+body {
+  background: black;
+  margin: 5% 10%;
+  width: 80%;
+  border: solid 2px white;
+  color: white;
+  font-size: 1.4em;
+  font-family: 'AntiPasto', 'Book Antiqua', Palatino, FreeSerif, serif;
+  letter-spacing: 4px;
+}
+
+#body-container{
+  width: 80%;
+  margin: auto;
+}
+
+#navlist
+{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li{
+    text-transform: uppercase;
+    display: inline;
+    padding: 0;
+    margin: 0 5.4%;
+  }
+
+  a{
+    color: white;
+    text-decoration:none;
+    &:hover {
+      text-decoration:none;
+      color: grey;
+    }
+    &:active{
+      color: grey;
+      font-weight: bold;
+    }
+  }
+}
+
+#caliroots-logo{
+  margin-top: -6%;
+
+  img{
+    width: 25%;
+    margin-left: 38%;
+    background-color: black;
+  }
+}
+
+#owl-example{
+  margin-bottom: 2.5%
+}
+
+#owl-example .item img{
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 1650px) {
+
+  #navlist li{
+    margin: 0 4.5%;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+  body{
+    font-size: 1em;
+  }
+  #navlist li{
+    margin: 0 4.5%;
+  }
+}
+@media only screen and (max-width: 850px) {
+  body{
+    font-size: 1em;
+  }
+  #navlist li{
+    margin: 0 4%;
+  }
+}

@@ -2,12 +2,60 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        <title>{% block title %}Caliroots{% endblock %}</title>
+        {% block stylesheets %}
+            <style>
+                @font-face {
+                    font-family: "AntiPasto";
+                    src: url({{ asset('bundles/clothing/css/font/Antipasto_regular.otf') }}) format("truetype");
+                }
+            </style>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+            <link rel="stylesheet/less" href="{{ asset('bundles/clothing/css/main.less') }}">
+            <link rel="stylesheet" href="{{ asset('bundles/clothing/owl-carousel/owl.carousel.css') }} ">
+            <link rel="stylesheet" href="{{ asset('bundles/clothing/owl-carousel/owl.theme.css') }} ">
+        {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        {% block body %}
+            <div id="body-container">
+                <div id="caliroots-logo">
+                    <img src="{{ asset('bundles/clothing/img/logo.gif') }}"/>
+                </div>
+                {% block nav %}
+                    <nav id="main-nav">
+                        <ul id="navlist">
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>|</li>
+                            <li>
+                                <a href="#">Men</a>
+                            </li>
+                            <li>|</li>
+                            <li>
+                                <a href="#">Women</a>
+                            </li>
+                            <li>|</li>
+                            <li>
+                                <a href="#">Roots</a>
+                            </li>
+                        </ul>
+                    </nav>
+                {% endblock %}
+                {% block main %}
+                {% endblock %}
+            </div>
+        {% endblock %}
+        {% block javascripts %}
+            <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+            <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+            <script src="{{ asset('bundles/clothing/owl-carousel/owl.carousel.js') }}"></script>
+            <script src="{{ asset('bundles/clothing/js/main.js') }}"></script>
+        {% endblock %}
     </body>
 </html>

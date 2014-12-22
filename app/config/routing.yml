@@ -1,0 +1,4 @@
+clothing:
+    resource: "@ClothingBundle/Resources/config/routing.yml"
+    prefix:   /
+
