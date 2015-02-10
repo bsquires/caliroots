@@ -1,0 +1,29 @@
+{% extends '::base.html.twig' %}
+
+{% block main %}
+    <section>
+        <header>
+            <h3>Contact Us</h3>
+        </header>
+        <p>
+            caliroots.apparel@gmail.com
+        </p>
+        <header>
+            <h3>Social Media</h3>
+        </header>
+        <p>
+            <a href="https://www.facebook.com/ShopCaliroots"><img src="{{ asset('bundles/clothing/img/fb_icon.png') }}" class="sm-logo"/>
+                Check us out on Facebook
+            </a>
+        </p>
+        <p>
+            <a href="http://i.instagram.com/caliroots.apparel/"><img src="{{ asset('bundles/clothing/img/instagram-logo.png') }}" class="sm-logo"/>
+                Check us out on Instagram
+            </a>
+        </p>
+    </section>
+{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ asset('bundles/clothing/css/roots.css') }} ">
+{% endblock %}

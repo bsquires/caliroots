@@ -1,0 +1,14 @@
+{% extends '::base.html.twig' %}
+
+{% block main %}
+    <section class="coming-soon-wrapper">
+        <figure style="overflow: hidden;">
+            <img src="{{ asset('bundles/clothing/img/I.jpg') }}" id="placeholder-img"/>
+        </figure>
+        <div id="coming-soon">Coming Soon . . .</div>
+    </section>
+{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ asset('bundles/clothing/css/menwomen.css') }} ">
+{% endblock %}

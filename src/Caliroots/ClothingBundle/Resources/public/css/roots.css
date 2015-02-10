@@ -1,0 +1,33 @@
+section{
+    min-height: 600px;
+    padding: 10%;
+}
+p{
+    margin: 3%  0 0 7%;
+}
+
+.sm-logo{
+    max-height: 30px;
+}
+
+@media only screen and (max-width: 1650px) {
+    section{
+        min-height: 400px;
+    }
+
+}
+
+@media only screen and (max-width: 1050px) {
+    section{
+        min-height: 300px;
+    }
+
+}
+@media only screen and (max-width: 850px) {
+    section{
+        min-height: 100px;
+    }
+    .sm-logo{
+        max-height: 15px;
+    }
+}

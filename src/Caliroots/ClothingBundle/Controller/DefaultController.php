@@ -17,4 +17,34 @@ class DefaultController extends Controller
     {
         return array();
     }
+
+    /**
+     * @Route("/men", name="men")
+     *
+     * @Template
+     */
+    public function menAction()
+    {
+        return array();
+    }
+
+    /**
+     * @Route("/women", name="women")
+     *
+     * @Template
+     */
+    public function womenAction()
+    {
+        return array();
+    }
+
+    /**
+     * @Route("/roots", name="roots")
+     *
+     * @Template
+     */
+    public function rootsAction()
+    {
+        return array();
+    }
 }

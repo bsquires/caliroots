@@ -1,0 +1,31 @@
+#placeholder-img{
+  -webkit-transform: rotate(270deg); /* Safari and Chrome */
+  -moz-transform: rotate(270deg);   /* Firefox */
+  -ms-transform: rotate(270deg);   /* IE 9 */
+  -o-transform: rotate(270deg);   /* Opera */
+  transform: rotate(270deg);
+}
+
+.coming-soon-wrapper{
+  padding: 5% 0;
+}
+#coming-soon{
+  margin-left: 60%;
+}
+
+@media only screen and (max-width: 1650px) {
+    #placeholder-img{
+    max-height: 500px;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    #placeholder-img{
+        max-height: 300px;
+    }
+}
+@media only screen and (max-width: 850px) {
+    #placeholder-img{
+        max-height: 100px;
+    }
+}
